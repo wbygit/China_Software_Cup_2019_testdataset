@@ -5,5 +5,10 @@ int main()
     if (!a)
         return 0;
 
+    if(1+1 > 2)
+    {
+        fclose(a);
+    }
+
     return 0;
 }

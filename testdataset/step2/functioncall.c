@@ -5,7 +5,6 @@ struct returnType
     int valinreturnType;
 };
 
-
 struct returnType Afunction() {
     struct returnType newReturnTYPE;
     newReturnTYPE.valinreturnType = 1;

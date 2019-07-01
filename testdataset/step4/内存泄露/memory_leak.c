@@ -5,7 +5,7 @@ int LeakExample(int i)
     void *q = malloc(4);
     if(i > 0)
     {
-          p = q;      /* “p”被重新赋值，指向新的地址，之前指向的内存被泄漏*/
+          p = q;
     } else
     {
           free(q);

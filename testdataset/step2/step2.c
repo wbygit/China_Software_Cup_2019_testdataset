@@ -20,9 +20,15 @@ enum Node
 
 typedef struct thisisAStructTagName Typedefname;
 
+struct thisisAStructTagName *thisisafunctionname()
+{
+    int t = 1 > 0 ? 2 : 3;
+    return &thisisAstructVAr;
+}
+
 int main()
 {
-    Typedefname * TypedefinePOINTER = &thisisAstructVAr;
+    Typedefname * TypedefinePOINTER = thisisafunctionname()->thisisAPOINter;
     TypedefinePOINTER->thisisAPOINter = NULL;
     int n = 10;
     int TimeMachine = 1;
@@ -43,10 +49,4 @@ int main()
         }
     }
     return 0;
-}
-
-struct thisisAStructTagName *thisisafunctionname()
-{
-    int t = 1 > 0 ? 2 : 3;
-    return &thisisAstructVAr;
 }
